@@ -22,14 +22,18 @@ export default {
     'sewing pattern'
   ],
   optionGroups: {
-    fit: ['size']
+    fit: ['bodyEase']
   },
-  measurements: [],
+  measurements: ['chest', 'hips', 'hpsToWaistBack','waistToKnee', 'shoulderToShoulder', 'neck' ],
   dependencies: {},
   inject: {},
   hide: [],
-  parts: ['box'],
+  parts: ['body'],
   options: {
-    size: { pct: 50, min: 10, max: 100 }
+    hipEase: {pct: 50, min:50, max: 100 },
+    neckDepthFront:{pct: 50, min: 50, max: 70},
+    neckDepthBack:{pct: 50, min: 50, max: 60},
+    
+   
   }
 }
