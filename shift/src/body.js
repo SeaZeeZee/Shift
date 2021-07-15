@@ -14,10 +14,12 @@ export default function (part) {
     measurements,
 
   } = part.shorthand()
+
   //design pattern here
   //body
   let lengthBody = measurements.waistToKnee + measurements.hpsToWaistBack
-  let widthBody = (measurements.hips / 2) + 127
+  let workingHip = measurements.hips / 2
+  let widthBody = ((workingHip + 127) * 2) * options.bodyEase
 
   points.topLeft = new Point(0,0)
   points.topRight = new Point(widthBody, 0)
