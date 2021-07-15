@@ -87,7 +87,18 @@ export default function (part) {
   
   points.neckBack = points.middle.shiftTowards(points.neckFront, neckDepthBack)
 
-  
+  points.neckBackCp1 = points.neckBack.shift(360, (points.neckFront.dy(points.neckLeft) * 0.8))
+  points.neckBackCp2 = points.neckBack.shift(180, (points.neckFront.dy(points.neckRight) * 0.8))
+  points.neckBackCp3 = points.neckLeft.shift(90, (points.neckBack.dy(points.neckLeft) * 0.8))
+  points.neckBackCp4 = points.neckRight.shift(90, (points.neckBack.dy(points.neckRight)* 0.8))
+
+    paths.NecklineBack1 = new Path()
+      .move(points.neckRight)
+      .curve(points.neckBackCp4, points.neckBackCp2, points.neckBack)
+
+    paths.necklineBack2 = new Path()
+      .move(points.neckBack)
+      .curve(points.neckBackCp1, points.neckBackCp3, points.neckLeft)
 
 
 
