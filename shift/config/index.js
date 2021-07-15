@@ -28,7 +28,7 @@ export default {
   dependencies: {},
   inject: {},
   hide: [],
-  parts: ['body'],
+  parts: ['body', 'sleeve'],
   options: {
     bodyEase: {pct: 50, min:50, max: 100 },
     neckDepthFront:{pct: 50, min: 50, max: 70},
