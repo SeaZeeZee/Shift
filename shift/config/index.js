@@ -24,7 +24,7 @@ export default {
   optionGroups: {
     fit: ['bodyEase', 'neckDepthFront', 'neckDepthBack']
   },
-  measurements: ['chest', 'hips', 'hpsToWaistBack','waistToKnee', 'shoulderToShoulder', 'neck' ],
+  measurements: ['chest', 'hips', 'hpsToWaistBack','waistToKnee', 'shoulderToShoulder', 'neck', 'biceps', 'shoulderToElbow'],
   dependencies: {},
   inject: {},
   hide: [],
