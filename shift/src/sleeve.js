@@ -16,6 +16,10 @@ export default function (part) {
     } = part.shorthand()
 //design pattern here
 
+let sleeveWidth = measurements.biceps 
+
+let sleeveLength = measurements.shoulderToElbow 
+
 
       // Complete?
   if (complete) {
