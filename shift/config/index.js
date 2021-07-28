@@ -22,18 +22,19 @@ export default {
     'sewing pattern'
   ],
   optionGroups: {
-    fit: ['bodyEase', 'neckDepthFront', 'neckDepthBack']
+    fit: ['bodyEase', 'neckDepthFront', 'neckDepthBack', 'bicepsEase', 'sleeveBonus']
   },
   measurements: ['chest', 'hips', 'hpsToWaistBack','waistToKnee', 'shoulderToShoulder', 'neck', 'biceps', 'shoulderToElbow'],
   dependencies: {},
   inject: {},
   hide: [],
-  parts: ['body', 'sleeve'],
+  parts: ['body', 'sleeve', 'gusset'],
   options: {
     bodyEase: {pct: 50, min:50, max: 100 },
-    neckDepthFront:{pct: 50, min: 50, max: 70},
-    neckDepthBack:{pct: 50, min: 50, max: 60},
-    
+    neckDepthFront: {pct: 50, min: 50, max: 70},
+    neckDepthBack: {pct: 50, min: 50, max: 60},
+    bicepsEase: {pct: 50, min:50, max: 100},
+    sleeveBonus: {pct: 80, min:60, max:100},
    
   }
 }
