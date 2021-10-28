@@ -36,6 +36,7 @@ export default {
     bicepsEase: {pct: 50, min:50, max: 100},
     sleeveBonus: {pct: 80, min:60, max:100},
     neckWidth: {pct: 71, min: 65, max: 85},
+    shiftLength: {pct:98, min: 80, max: 110},
    
   }
 }
