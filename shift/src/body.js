@@ -17,9 +17,13 @@ export default function (part) {
 
   //design pattern here
   //body
-  let lengthBody = (measurements.waistToKnee + measurements.hpsToWaistBack) * options.shiftLength
-  let workingHip = measurements.hips / 2
-  let widthBody = workingHip * (1 + options.bodyEase)
+  const lengthBody = (measurements.waistToKnee + measurements.hpsToWaistBack) * (1 + options.shiftLength)
+  const workingHip = measurements.hips / 2
+  const widthBody = workingHip * (1 + options.bodyEase)
+
+  const maxLength = ( lengthBody > (measurements.waistToFloor + measurements.hpsToWaistBack))
+    ? measurements.waistToFloor + measurements.hpsToWaistBack
+    : lengthBody
 
   points.topLeft = new Point(0,0)
   points.topRight = new Point(widthBody, 0)

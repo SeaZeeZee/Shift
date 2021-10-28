@@ -24,7 +24,7 @@ export default {
   optionGroups: {
     fit: ['bodyEase', 'neckDepthFront', 'neckDepthBack', 'bicepsEase', 'sleeveBonus', 'neckWidth', ]
   },
-  measurements: ['chest', 'hips', 'hpsToWaistBack','waistToKnee', 'shoulderToShoulder', 'neck', 'biceps', 'shoulderToElbow', 'hpsToBust'],
+  measurements: ['chest', 'hips', 'hpsToWaistBack','waistToKnee', 'shoulderToShoulder', 'neck', 'biceps', 'shoulderToElbow', 'hpsToBust', 'waistToFloor'],
   dependencies: {},
   inject: {},
   hide: [],
@@ -36,7 +36,7 @@ export default {
     bicepsEase: {pct: 18, min: 18, max: 51},
     sleeveBonus: {pct: 80, min: 60, max: 100},
     neckWidth: {pct: 71, min: 65, max: 85},
-    shiftLength: {pct:98, min: 80, max: 110},
+    shiftLength: {pct:2, min: 0, max: 20},
    
   }
 }
