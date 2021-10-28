@@ -31,8 +31,8 @@ export default {
   parts: ['body', 'sleeve', 'gusset'],
   options: {
     bodyEase: {pct: 21, min: 21, max: 50 },
-    neckDepthFront: {pct: 50, min: 50, max: 70},
-    neckDepthBack: {pct: 50, min: 50, max: 60},
+    neckDepthFront: {pct: 31, min: 25, max: 50},
+    neckDepthBack: {pct: 18, min: 15, max: 50},
     bicepsEase: {pct: 50, min:50, max: 100},
     sleeveBonus: {pct: 80, min:60, max:100},
     neckWidth: {pct: 71, min: 65, max: 85},
