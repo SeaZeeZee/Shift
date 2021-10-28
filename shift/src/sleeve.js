@@ -26,11 +26,11 @@ points.sleeveBottomLeft = new Point(sleeveLength, 0)
 points.sleeveBottomRight = new Point(sleeveLength, sleeveWidth)
 
 paths.sleeve = new Path()
-.move(points.sleeveRight)
-.line(points.sleeveLeft)
-.line(points.sleeveBottomLeft)
-.line(points.sleeveBottomRight)
-.close();
+  .move(points.sleeveRight)
+  .line(points.sleeveLeft)
+  .line(points.sleeveBottomLeft)
+  .line(points.sleeveBottomRight)
+  .close();
 
 
 
