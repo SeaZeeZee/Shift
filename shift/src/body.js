@@ -60,12 +60,12 @@ export default function (part) {
     
  //neckline 
 
- let neckWidth = measurements.neck * options.neckWidth
+ const neckWidth = measurements.neck * options.neckWidth
 
  points.neckLeft = points.middle.shiftTowards(points.leftShoulder, neckWidth /2)
  points.neckRight = points.middle.shiftTowards(points.rightShoulder, neckWidth /2)
 
-  let neckDepthFront = measurements.hpsToBust * options.neckDepthFront
+  const neckDepthFront = measurements.hpsToBust * options.neckDepthFront
 
   points.middleHem = points.bottomLeft.shiftTowards(points.bottomRight, widthBody /2)
 
@@ -87,7 +87,7 @@ export default function (part) {
       .curve(points.neckCp4, points.neckCp3, points.neckLeft)
 
   
-  let neckDepthBack = measurements.hpsToBust * options.neckDepthBack
+  const neckDepthBack = measurements.hpsToBust * options.neckDepthBack
   
   points.neckBack = points.middle.shiftTowards(points.neckFront, neckDepthBack)
 
