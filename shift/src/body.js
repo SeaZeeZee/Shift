@@ -56,7 +56,7 @@ export default function (part) {
     
  //neckline 
 
- let neckWidth = (measurements.neck + 100) / 2
+ let neckWidth = measurements.neck * options.neckWidth
 
  points.neckLeft = points.middle.shiftTowards(points.leftShoulder, neckWidth /2)
  points.neckRight = points.middle.shiftTowards(points.rightShoulder, neckWidth /2)
