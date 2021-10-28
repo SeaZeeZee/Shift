@@ -17,7 +17,7 @@ export default function (part) {
 
   //design pattern here
   //body
-  let lengthBody = measurements.waistToKnee + measurements.hpsToWaistBack
+  let lengthBody = (measurements.waistToKnee + measurements.hpsToWaistBack) * options.shiftLength
   let workingHip = measurements.hips / 2
   let widthBody = workingHip * (1 + options.bodyEase)
 
