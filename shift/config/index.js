@@ -22,9 +22,9 @@ export default {
     'sewing pattern'
   ],
   optionGroups: {
-    fit: ['bodyEase', 'neckDepthFront', 'neckDepthBack', 'bicepsEase', 'sleeveBonus']
+    fit: ['bodyEase', 'neckDepthFront', 'neckDepthBack', 'bicepsEase', 'sleeveBonus', 'neckWidth']
   },
-  measurements: ['chest', 'hips', 'hpsToWaistBack','waistToKnee', 'shoulderToShoulder', 'neck', 'biceps', 'shoulderToElbow'],
+  measurements: ['chest', 'hips', 'hpsToWaistBack','waistToKnee', 'shoulderToShoulder', 'neck', 'biceps', 'shoulderToElbow', 'hpsToBust'],
   dependencies: {},
   inject: {},
   hide: [],
