@@ -35,7 +35,7 @@ export default {
     neckDepthBack: {pct: 50, min: 50, max: 60},
     bicepsEase: {pct: 50, min:50, max: 100},
     sleeveBonus: {pct: 80, min:60, max:100},
-    neckWidth: {ptc: 71, min: 65, max: 85},
+    neckWidth: {pct: 71, min: 65, max: 85},
    
   }
 }
