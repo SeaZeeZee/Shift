@@ -16,7 +16,7 @@ export default function (part) {
     } = part.shorthand()
 //design pattern here
 
-let sleeveWidth = measurements.biceps + (100 * options.bicepsEase)
+let sleeveWidth = measurements.biceps * (1 + options.bicepsEase)
 
 let sleeveLength = measurements.shoulderToElbow * options.sleeveBonus
 
