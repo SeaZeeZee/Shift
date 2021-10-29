@@ -16,10 +16,13 @@ export default function (part) {
     } = part.shorthand()
 //design pattern here
 
+const fullArmhole = measurements.bicep * (1 + 0,85)
+const gussetMeasure = (fullArmhole / 2) * (0,44)
+
 points.gussetLeft = new Point(0,0)
-points.gussetRight = new Point(0,150)
-points.gussetBottomLeft = new Point(150,0)
-points.gussetBottomRight = new Point(150,150)
+points.gussetRight = new Point(0,gussetMeasure)
+points.gussetBottomLeft = new Point(gussetMeasure,0)
+points.gussetBottomRight = new Point(gussetMeasure,gussetMeasure)
 
 paths.gusset = new Path()
     .move(points.gussetRight)
