@@ -17,9 +17,13 @@ export default function (part) {
 
   //design pattern here
   //body
-  let lengthBody = measurements.waistToKnee + measurements.hpsToWaistBack
-  let workingHip = measurements.hips / 2
-  let widthBody = ((workingHip + 127) * 2) * options.bodyEase
+  const lengthBody = (measurements.waistToKnee + measurements.hpsToWaistBack) * (1 + options.shiftLength)
+  const workingHip = measurements.hips / 2
+  const widthBody = workingHip * (1 + options.bodyEase)
+
+  const maxLength = ( lengthBody > (measurements.waistToFloor + measurements.hpsToWaistBack))
+    ? measurements.waistToFloor + measurements.hpsToWaistBack
+    : lengthBody
 
   points.topLeft = new Point(0,0)
   points.topRight = new Point(widthBody, 0)
@@ -56,12 +60,12 @@ export default function (part) {
     
  //neckline 
 
- let neckWidth = (measurements.neck + 100) / 2
+ const neckWidth = measurements.neck * options.neckWidth
 
  points.neckLeft = points.middle.shiftTowards(points.leftShoulder, neckWidth /2)
  points.neckRight = points.middle.shiftTowards(points.rightShoulder, neckWidth /2)
 
-  let neckDepthFront = 150 * options.neckDepthFront
+  const neckDepthFront = measurements.hpsToBust * options.neckDepthFront
 
   points.middleHem = points.bottomLeft.shiftTowards(points.bottomRight, widthBody /2)
 
@@ -83,7 +87,7 @@ export default function (part) {
       .curve(points.neckCp4, points.neckCp3, points.neckLeft)
 
   
-  let neckDepthBack = 80 * options.neckDepthBack
+  const neckDepthBack = measurements.hpsToBust * options.neckDepthBack
   
   points.neckBack = points.middle.shiftTowards(points.neckFront, neckDepthBack)
 

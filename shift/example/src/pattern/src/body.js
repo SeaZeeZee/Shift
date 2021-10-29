@@ -19,7 +19,7 @@ export default function (part) {
   //body
   let lengthBody = measurements.waistToKnee + measurements.hpsToWaistBack
   let workingHip = measurements.hips / 2
-  let widthBody = ((workingHip + 127) * 2) * options.bodyEase
+  let widthBody = workingHip * (1 + options.bodyEase)
 
   points.topLeft = new Point(0,0)
   points.topRight = new Point(widthBody, 0)
