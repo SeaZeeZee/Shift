@@ -37,6 +37,6 @@ export default {
     sleeveBonus: {pct: 80, min: 60, max: 100},
     neckWidth: {pct: 71, min: 65, max: 85},
     shiftLength: {pct:2, min: 0, max: 20},
-   
+    gussetSize: {pct:44, min: 44, max: 50},
   }
 }

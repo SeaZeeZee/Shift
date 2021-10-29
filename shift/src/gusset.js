@@ -16,8 +16,8 @@ export default function (part) {
     } = part.shorthand()
 //design pattern here
 
-const fullArmhole = measurements.biceps * (1 + 0,85)
-const gussetMeasure = (fullArmhole / 2) * (0,44)
+const fullArmhole = measurements.biceps * (1 + 0.85)
+const gussetMeasure = (fullArmhole / 2) * 0.44
 
 points.gussetLeft = new Point(0,0)
 points.gussetRight = new Point(0,gussetMeasure)
