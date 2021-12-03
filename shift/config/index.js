@@ -5,8 +5,8 @@ import { version } from '../package.json'
 export default {
   name: 'shift',
   version,
-  design: 'SeaZeeZee',
-  code: 'SeaZeeZee',
+  design: 'Zee',
+  code: 'Zee',
   department: 'womenswear',
   type: 'pattern',
   difficulty: 3,
